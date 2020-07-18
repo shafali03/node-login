@@ -1,9 +1,12 @@
 const express = require("express")
 const app = express()
+const { pool } = require('./dbConfig')
 
 const PORT = process.env.PORT || 4000
 
 app.set("view engine", "ejs")
+// send details from front to the server
+app.use(express.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
   res.render("index")
