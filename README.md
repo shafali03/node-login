@@ -7,5 +7,7 @@ Node Login
 
 ```
 npm i dotenv pg
+
+npm i bcrypt
   
 ```
