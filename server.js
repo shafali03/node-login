@@ -25,7 +25,7 @@ app.get('/users/dashboard', (req, res) => {
 })
 
 app.post('/users/register', (req, res) => {
-  let(name, email, password, password2) = req.body
+  let { name, email, password, password2 } = req.body
 
   console.log({
     name, email, password, password2
